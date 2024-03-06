@@ -1,0 +1,100 @@
+/* General styling for the body */
+body {
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* No margin */
+  padding: 10px; /* Uniform padding of 10px (Note: The comma is not needed) */
+}
+
+/* General styling for h1 tittles */
+h1 {
+  font-size: 250%;
+}
+
+/* Styling for a container class, possibly for a specific section or a div */
+.container {
+  width: 400px; /* Fixed width */
+  background: #f2f2f2; /* Light grey background */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  padding: 10px; /* Padding inside the container */
+}
+
+/* Styling for the form container */
+.formcontainer {
+  text-align: left; /* Align text to the left */
+  margin-left: 5%; /* Left margin as a percentage for responsive design */
+  margin-right: 5%; /* Right margin as a percentage */
+  margin-top: 2%; /* Top margin */
+}
+
+/* Styling for each text field within the form */
+.textfield {
+  margin: 15px 0; /* Vertical margin for spacing between fields */
+}
+
+/* Styling for labels in text fields */
+.textfield label {
+  display: inline-block; /* Allows setting a width or margin */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+/* Styling for input fields */
+.textfield input {
+  width: 100%; /* Full width of the parent container */
+  padding: 10px; /* Padding inside the input field */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners for the input field */
+}
+
+/* Styling for the submit button */
+.submit-button {
+  background-color: #0077ff; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  margin: 10px 5px; /* Margin around the button */
+}
+
+/* Styling for the reset button */
+.reset-button {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 10px 5px; /* Margin */
+}
+
+/* Hover effect for both submit and reset buttons */
+.submit-button:hover,
+.reset-button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Styling for error messages */
+.error {
+  color: red; /* Red color for errors */
+  display: none; /* Hidden by default */
+}
+
+/* Styling for informational messages */
+.info {
+  display: none; /* Hidden by default */
+}
+
+/* Specific styling for the terms error message */
+#termsError {
+  display: none; /* Hidden by default */
+  margin-left: 10px; /* Space from the left */
+  color: red; /* Red color */
+}
+
+/* Styling for the terms checkbox section */
+.terms-checkbox {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Vertical alignment */
+}

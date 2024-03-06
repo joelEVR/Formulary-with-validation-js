@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page -->
+    <title>Lab 4 Joel Velasquez</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" type="text/css" href="css/weeklykitten.css">
+</head>
+
+<body>
+    <!-- Main container for the form -->
+    <div class="formcontainer">
+        <!-- Heading of the form -->
+        <h1>Weekly Kitten Pictures Subscription</h1>
+        <!-- Horizontal rule for visual separation -->
+        <hr>
+        <!-- Form with GET method and custom validation on submit -->
+        <form action="registration.html" method="get" onsubmit="return validate();">
+            <!-- Note to write a validation function in JavaScript -->
+
+            <!-- Section for email input -->
+            <div class="textfield">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                <!-- Error message for email validation -->
+                <span class="error" id="emailError"><strong>x </strong> Email address should be non-empty with the
+                    format xyz@xyz.xyz.</span>
+            </div>
+
+            <!-- Section for username input -->
+            <div class="textfield">
+                <label for="login">User Name</label>
+                <input type="text" name="login" id="login" placeholder="User name">
+                <!-- Error message for username validation -->
+                <span class="error" id="userError"><strong>x </strong>User name should be non-empty, and less than 30
+                    characters long.</span>
+            </div>
+
+            <!-- Section for password input -->
+            <div class="textfield">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+                <!-- Error message for password validation -->
+                <span class="error" id="passwordError"><strong>x </strong>Password should be at least 8
+                    characters.</span>
+            </div>
+
+            <!-- Section for password re-entry -->
+            <div class="textfield">
+                <label for="pass2">Re-type Password</label>
+                <input type="password" id="pass2" placeholder="Password">
+                <!-- Error message for password match validation -->
+                <span class="error" id="password2Error"><strong>x </strong>Ensure that both the password fields have the
+                    same value and are not blank</span>
+            </div>
+
+            <!-- Section for newsletter subscription option -->
+            <div class="checkbox">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">I agree to receive Weekly Kitten Pictures newsletters</label>
+                <!-- Information message for newsletter subscription -->
+                <span class="info" id="newsletterInfo"><strong>x </strong>Please note that you may receive additional
+                    emails that could be considered spam.</span>
+            </div>
+
+            <!-- Section for terms and conditions agreement -->
+            <div class="checkbox terms-checkbox">
+                <div class="checkbox-label">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <!-- Error message for terms and conditions validation -->
+                <span class="error" id="termsError"><strong>x </strong>Please accept the terms and conditions.</span>
+            </div>
+
+            <!-- Submit and Reset buttons for the form -->
+            <button type="submit" class="submit-button">Sign-Up</button>
+            <button type="reset" class="reset-button">Reset</button>
+
+        </form>
+    </div>
+    <!-- Link to external JavaScript file for form validation and behavior -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
